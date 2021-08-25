@@ -1,0 +1,115 @@
+body {
+    margin: 0 auto;
+    width: 80vw;
+    min-width: 800px;
+    height: 100vw;
+    /* background-color: slategray; */
+}
+
+html {
+    font-size: 10px;
+    /* background-color: slategray; */
+    background: linear-gradient(
+        133deg,
+        rgb(235, 217, 181) 0%,
+        rgba(236, 105, 165, 1) 50%,
+        rgba(89, 232, 247, 1) 100%
+    );
+}
+
+h1, h2 {
+    font-family: "Raleway", sans-serif;
+    color: #2a2a2a;
+}
+
+p, li {
+    font-family: "Montserrat", sans-serif;
+    color: #2a2a2a;
+}
+
+/* 
+REMs are a way of setting font-based size, based on
+the font-size of the root HTML element.
+Allows you to quickly scale an entire project by
+changing the root font-size. 
+
+1 rem = 100% font size of the root element, default is
+16 px 
+ex: applied to an h1: 4rem = 4 * h1 size
+*/
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: 2px 2px 10px black;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+header {
+    /* margin: 0 0 10px 0; */
+    margin-bottom: 10px;
+}
+
+/* Commas state that we want to style "this" and "that"
+tag/element */
+article, aside, header, main, nav, section {
+    background-color: rgba(255, 255, 255, .05);
+    padding: 1%;
+}
+
+nav {
+    height: 50px;
+}
+
+/* No commas state that we want to style "this"
+element WITHIN another/"that" element */
+nav ul {
+    display: flex;
+}
+
+nav li {
+    list-style-type: none;
+    text-align: center;
+    flex: 1;
+}
+
+nav a, li {
+    font-size: 2rem;
+    height: 3rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    display: flex;
+}
+
+/* 4 = 80% of that container (4/4+1) */
+section, article {
+    flex: 4;
+}
+
+aside {
+    flex: 1;
+    margin-left: 10px;
+    padding: 1%;
+}
+
+aside a {
+    float: left;
+    width: 50%;
+}
+
+aside img {
+    max-width: 100%;
+}
+
+footer {
+    margin-top: 10px;
+}

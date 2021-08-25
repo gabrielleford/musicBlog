@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link ref="text/css" rel="stylesheet" href="style.css"/>
+    <title>Music Blog</title>
+    <!-- 
+        Holds Meta Data / Information we don't see.
+            - links, viewport info, document title, etc.
+     -->
+     <!-- 3 ways to use CSS with our doc: 
+        1. Embed the CSS within a <style> tag.
+        2. Inline styling within another element.
+        3. Link a stylesheet to our HTML document. -->
+    <!-- <style>
+        body {
+            background-color: black;
+        }
+    </style> -->
+
+</head>
+
+<!-- <body style="background-color: green;"> -->
+<body>
+    <header>
+        <h1>Music Blog</h1>
+
+        <nav>
+           <ul>
+               <!-- (li>span{Home})+(li>a)*3 -->
+               <li><span>Home</span></li>
+               <li><a href="#">Get Started</a></li>
+               <li><a href="#">Photos</a></li>
+               <li><a href="#">Forum</a></li>
+           </ul> 
+        </nav>
+    </header>
+
+    <section>
+        <h2>Welcome</h2>
+        <!-- Main specifies the main content.
+        There can only be one!
+        Cannon be descendant (child) of: 
+            - header, nav, article, aside, footer -->
+        <main>
+            <article>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod mollitia veniam aspernatur facere minus nulla dicta deserunt voluptatibus cum, dolores necessitatibus non, iste, asperiores nihil alias sit modi iure esse! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad labore in qui, ex cumque similique vero, temporibus, alias illum cupiditate inventore? Aperiam a velit, accusantium consectetur fuga nihil odio numquam.
+                </p>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, veritatis rem beatae doloribus facilis error impedit eius adipisci quia veniam voluptatibus tempora vel omnis minus molestias esse obcaecati ducimus suscipit! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste quaerat ipsam in sint id amet voluptatum accusamus veritatis, voluptates voluptas nobis consectetur qui porro ad totam nihil veniam? Praesentium, vero.
+                </p>
+            </article>
+
+            <aside>
+                <h2>Favorite Albums</h2>
+
+                <!-- (a>img)*4 -->
+                <a target="blank" href="./assets/dearAgonyBreakingBenjamin.jpg"><img src="./assets/dearAgonyBreakingBenjamin.jpg" alt="Dear Agony by Breaking Benjamin"></a>
+                <a target="blank" href="./assets/Free6lack.jpg"><img src="./assets/Free6lack.jpg" alt="Free 6lack by 6lack"></a>
+                <a target="blank" href="./assets/myDearMelancholyTheWeeknd.jpg"><img src="./assets/myDearMelancholyTheWeeknd.jpg" alt="My Dear Melancholy by The Weeknd"></a>
+                <a target="blank" href="./assets/rageOfAngelsSantinoLeSaint.jpeg"><img src="./assets/rageOfAngelsSantinoLeSaint.jpeg" alt="Rage of Angels by Santino le Saint"></a>
+            </aside>
+        </main>
+    </section>
+    
+    <!-- Footers can contain: authorship info, copyright, contact info, sitemap, related links/documents, back to top link -->
+    <footer>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sit officia, sequi est suscipit corrupti corporis a nisi at voluptatum, 2021 by Your Name</p>
+    </footer>
+</body>
+</html>
